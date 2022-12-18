@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  background-color: #e5e5e5;
+} */
+
+.custom-ul li {
+  margin-left: 40px;
+}
+
+.custom-ul li:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+  left: 20px;
+  margin-top: 10px;
+}
+
+.slider-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.slider-dots li {
+  margin: 0 6px;
+}
+
+.slider-dots .slick-active button {
+  width: 6px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  color: transparent;
+  margin-top: 0;
+}
+
+.slider-dots button {
+  width: 6px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  color: transparent;
+  margin-top: 14px;
+  transition: 0.4s;
+}
+
+input:checked + div {
+  @apply border-blue-500;
+}
+input:checked + div svg {
+  @apply block;
+}
